@@ -3,6 +3,10 @@ apply plugin: 'application'
 
 def versionNum = '0.0.20'
 
+apply plugin: 'maven'
+
+group = 'com.github.YourUsername'
+    
 allprojects {
     tasks.withType(JavaCompile) {
         options.compilerArgs << "-Xlint:unchecked"
