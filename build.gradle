@@ -9,16 +9,6 @@ allprojects {
     }
 }
 
-task loader(type: Exec) {
-    dependsOn << 'uberloader'
-    commandLine './src/make/buildit.sh'
-}
-
-task unloader(type: Exec) {
-    dependsOn << 'uberunloader'
-    commandLine './src/make/unloader.sh'
-}
-
 jar {
     baseName = 'cassandra-loader'
     version = versionNum
