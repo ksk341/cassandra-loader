@@ -66,7 +66,7 @@ import com.datastax.driver.core.ResultSetFuture;
 import com.datastax.driver.core.policies.TokenAwarePolicy;
 import com.datastax.driver.core.policies.DCAwareRoundRobinPolicy;
 
-class CqlDelimLoadTask implements Callable<Long> {
+public class CqlDelimLoadTask implements Callable<Long> {
     private String BADPARSE = ".BADPARSE";
     private String BADINSERT = ".BADINSERT";
     private String LOG = ".LOG";
